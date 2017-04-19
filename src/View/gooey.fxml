@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerGooey">
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Untitled Tab 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox fillHeight="false" minHeight="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <VBox fillWidth="false" minHeight="0.0" minWidth="100.0" spacing="10.0">
+                                 <children>
+                                    <Button fx:id="button1" mnemonicParsing="false" onAction="#newPageClicked" text="Button" VBox.vgrow="ALWAYS" />
+                                    <Button mnemonicParsing="false" onAction="#listPagesClicked" text="Button" />
+                                    <Button mnemonicParsing="false" text="Button" />
+                                    <ListView fx:id="ListView1" prefWidth="200.0" />
+                                 </children>
+                              </VBox>
+                              <Pane fx:id="Panel" minHeight="0.0" HBox.hgrow="ALWAYS">
+                                 <rotationAxis>
+                                    <Point3D />
+                                 </rotationAxis>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <bottom>
+      <Label text="Label" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <HBox fillHeight="false" BorderPane.alignment="CENTER">
+         <children>
+            <TextField />
+            <Region prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" text="Button" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
